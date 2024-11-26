@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Ensure the rules are only applied to non-existing files
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  
+  # Rewrite rule to convert employee/dish/new to employee_dish_new.php
+  RewriteRule ^employee/([^/]+)/new$ employee_$1_new.php [L]
+
+  # General rule for other employee requests
+  RewriteRule ^employee/(.*)$ employee_$1.php [L]
+    
+  RewriteRule ^([^\.]+)$ $1.php [NC,L]
+</IfModule>

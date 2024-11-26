@@ -1,0 +1,160 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.header .profile-icon {
+  background-color: #4caf50;
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.header .menu {
+  display: flex;
+  align-items: center;
+}
+
+.header .menu .cart-icon {
+  margin-right: 10px;
+}
+
+.header .menu .menu-icon {
+  font-size: 20px;
+  color: #757575;
+}
+
+.content {
+  padding: 20px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.content h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.card .icons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.card .icons img {
+  width: 24px;
+  height: 24px;
+}
+
+.card .pest-list, .card .shop-list, .card .notifications {
+  text-align: left;
+}
+
+.card .pest-list .pest-item, .card .shop-list .shop-item, .card .notifications .notification-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.card .pest-list .pest-item:last-child, .card .shop-list .shop-item:last-child, .card .notifications .notification-item:last-child {
+  border-bottom: none;
+}
+
+.card .pest-list .pest-item .pest-name, .card .shop-list .shop-item .shop-name, .card .notifications .notification-item .notification-text {
+  font-size: 16px;
+}
+
+.card .pest-list .pest-item .pest-date, .card .shop-list .shop-item .shop-price, .card .notifications .notification-item .notification-time {
+  font-size: 14px;
+  color: #757575;
+}
+
+.card .pest-list .pest-item .pest-percentage {
+  font-size: 16px;
+  color: #4caf50;
+}
+
+.card .shop-list .shop-item .shop-image {
+  width: 80px;
+  height: 80px;
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+/* Button Styling for Icon-based Buttons */
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+button img {
+  width: 24px;  /* Adjust size of the icon */
+  height: 24px; /* Adjust size of the icon */
+}
+
+/* Footer icons styled as buttons */
+.icon-button {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 0;
+}
+
+.icon-button img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Footer */
+.footer {
+  background-color: #ffffff;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #e0e0e0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer .camera-icon {
+  background-color: #ff9800;
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 24px;
+}
